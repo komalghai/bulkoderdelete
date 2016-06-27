@@ -1,12 +1,12 @@
 <?php
-
+echo "<script>alert(1);</script>";
 	session_start();
 
 	require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
 
 	require __DIR__.'/conf.php';
-
+echo "<script>alert(2);</script>";
 	# Guard: http://docs.shopify.com/api/authentication/oauth#verification
 	shopify\is_valid_request($_GET, SHOPIFY_APP_SHARED_SECRET) or die('Invalid Request! Request or redirect did not come from Shopify');
 
