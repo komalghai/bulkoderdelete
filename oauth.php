@@ -4,7 +4,7 @@ echo "<script>alert(1);</script>";
 
 	require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
-
+echo "<script>alert(3);</script>";
 	require __DIR__.'/conf.php';
 echo "<script>alert(2);</script>";
 	# Guard: http://docs.shopify.com/api/authentication/oauth#verification
